@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:weightSum="1">
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/nt_lauout1" android:layout_alignParentBottom="true"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<Button android:id="@+id/nt_ok" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="0.5"
+			android:text="Save" android:background="@drawable/btn01" android:textColor="#fff"/>
+		<Button android:id="@+id/nt_cancel" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="0.5"
+			android:text="Cancel" android:background="@drawable/btn01" android:textColor="#fff"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_above="@id/nt_lauout1" android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Title : " />
+			<EditText android:id="@+id/nt_title" android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<requestFocus></requestFocus>
+			</EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Password : " />
+			<EditText android:id="@+id/nt_password" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:inputType="textPassword">
+			</EditText>
+		</LinearLayout>
+		<TextView android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:text="Message" />
+		<EditText android:id="@+id/nt_text" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:inputType="textMultiLine"
+			android:gravity="top|left">
+		</EditText>
+	</LinearLayout>
+
+</RelativeLayout>

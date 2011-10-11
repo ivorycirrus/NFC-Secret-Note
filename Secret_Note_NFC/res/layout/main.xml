@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center">
+
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_marginTop="10dp" android:src="@android:drawable/ic_lock_lock"/>
+<TextView android:textSize="28dp" android:text="Secret Note"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70dp"></TextView>
+	<Button android:id="@+id/btn_drawer" android:layout_width="200dp"
+		android:layout_height="50dp" android:text="Open Drawer" android:layout_marginBottom="15dp" android:background="@drawable/btn01" android:textColor="#fff"/>
+		<Button android:id="@+id/btn_exchange" android:layout_width="200dp"
+		android:layout_height="50dp" android:text="Share Document" android:layout_marginBottom="15dp" android:background="@drawable/btn01" android:textColor="#fff"/>
+	<Button android:id="@+id/btn_exit" android:layout_width="200dp"
+		android:layout_height="50dp" android:text="Exit" android:layout_marginBottom="30dp" android:background="@drawable/btn01" android:textColor="#fff"/>
+</LinearLayout>

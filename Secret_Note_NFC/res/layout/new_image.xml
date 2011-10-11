@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:weightSum="1">
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/ni_lauout1" android:layout_alignParentBottom="true"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<Button android:id="@+id/ni_ok" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="0.5"
+			android:text="Save" android:background="@drawable/btn01" android:textColor="#fff"/>
+		<Button android:id="@+id/ni_cancel" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="0.5"
+			android:text="Cancel" android:background="@drawable/btn01" android:textColor="#fff"/>
+	</LinearLayout>
+	<!--
+		<ScrollView android:id="@+id/ni_scroll_inflate"
+		android:layout_above="@id/ni_lauout1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+	-->
+	<ScrollView android:layout_above="@id/ni_lauout1"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:orientation="vertical">
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="Title : " />
+				<EditText android:id="@+id/ni_title" android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<requestFocus></requestFocus>
+				</EditText>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="Password : " />
+				<EditText android:id="@+id/ni_password"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:inputType="textPassword">
+				</EditText>
+			</LinearLayout>
+			<TextView android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:text="Image" />
+			<ImageView android:id="@+id/ni_image" android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<Button android:id="@+id/ni_getimage" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:text="Insert Image" />
+			<TextView android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:text="Message" />
+			<EditText android:id="@+id/ni_text" android:layout_width="match_parent"
+				android:layout_height="250dp" android:inputType="textMultiLine"
+				android:gravity="top|left">
+			</EditText>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

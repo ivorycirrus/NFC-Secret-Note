@@ -2,7 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.lgcns.nfc.secretnote" android:versionCode="1"
 	android:versionName="1.0">
-	<application android:icon="@android:drawable/ic_lock_lock" android:label="@string/app_name">
+	
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.NFC" />
+	
+	<uses-feature android:name="android.hardware.nfc" />
+	<uses-sdk android:minSdkVersion="15" />
+	
+	<application android:icon="@android:drawable/ic_lock_lock" android:label="@string/app_name" android:allowBackup="false">
 		<activity android:label="@string/app_name" android:name="SceretNote" android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -32,11 +40,5 @@
 		</activity>
 
 	</application>
-
-	<uses-permission android:name="android.permission.CAMERA" />
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.NFC" />
 	
-	<uses-feature android:name="android.hardware.nfc" required="true" />
-	<uses-sdk android:minSdkVersion="10" />
 </manifest>
